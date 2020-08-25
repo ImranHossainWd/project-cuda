@@ -1,0 +1,458 @@
+/* ******************************************** */
+/*                     Basic Setup              */
+/* ******************************************** */
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Titillium Web', sans-serif;
+}
+ul li{
+	list-style:none;
+}
+h2{
+	padding-bottom: 30px;
+	letter-spacing: 2px;
+}
+p{
+	padding-bottom: 30px;
+}
+h2::after{
+	content: "";
+	display: block;
+	height: 3px;
+	width:85px;
+	background:lightgray;
+	margin:auto;
+
+}
+.clearfix::after{
+	content: "";
+	clear:both;
+	display:table;
+}
+
+/* ******************************************** */
+/*                     Header Section           */
+/* ******************************************** */
+.wrapper{
+	width:70%;
+	margin:0 auto;
+
+}
+
+header{
+	background:linear-gradient(rgba(135,80,156,.9),rgba(135,80,156,.9)) , url(../image/computer-work2.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height:85vh;
+	position:relative;
+
+}
+
+.logo{
+	float:left;
+
+}
+.logo img{
+	padding-top: 20px;
+}
+.menu {
+	float: right;
+}
+.menu ul{
+	
+}
+.menu li{
+	display: inline-block;
+	margin:20px 0 0 20px;
+
+	
+}
+.menu li a:link,
+.menu li a:visited{
+	color:white;
+	text-decoration:none;
+	padding: 5px 10px;
+}
+
+.menu li a:hover{
+	background: #643a79;
+	border-radius:5px;
+}
+.active{
+	background: #643a79;
+	border-radius:5px;
+}
+.focusbox{
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	text-align: center;
+	color:white;
+}
+.btn{
+	text-decoration: none;
+	color:white;
+	background: #eb7d4b;
+	padding:20px 70px;
+	font-weight: 500;
+	font-size:16px;
+	border-bottom: 5px solid #c86a40;
+	border-radius:6px;
+}
+
+
+/* ******************************************** */
+/*                   Services Section           */
+/* ******************************************** */
+section{
+	padding:80px 0;
+}
+.service-section{
+	
+	background:linear-gradient(rgba(23,194,164,.9),rgba(23,194,164,.9)) ,url(../image/computer-work.jpg);
+	background-attachment:fixed;
+	border: 0px solid red;
+	color:white;
+}
+.row{
+	width:70%;
+	margin:0 auto;
+	border:0px solid black;
+	text-align: center;
+	
+
+}
+
+
+.service-head h2,p{
+	padding:10px;
+	color:white;
+}
+
+.service-wrapper{
+	color:white;
+	margin-top: 20px;
+	overflow:hidden;
+}
+.branding, .design, .development, .rocket-science{
+	width:25%;
+	float:left;
+}
+.branding h3, .design h3, .development h3, .rocket-science h3{
+	text-transform: uppercase;
+	color:#fff;
+}
+
+
+/* ******************************************** */
+/*                   Team Member Section        */
+/* ******************************************** */
+
+.team-section{
+	background: #e7f1f8 ;
+	color:black;
+}
+.team-head h2, p{
+	color:black;
+}
+.team-member{
+	color:black;
+	margin-top:20px;
+
+	overflow:hidden;
+
+}
+.team-member h3{
+	padding-top:38px;
+}
+.annie, .kate, .olivia, .ashley{
+    width:25%;
+    
+
+	float: left;
+}
+.annie img, .kate img, .olivia img, .ashley img{
+	clip-path: circle(50% at center);
+
+}
+span{
+	font-size: 12px;
+	color:blue;
+}
+.social-link{
+	padding: 10px 0;
+	border: 0px solid black;
+}
+.social-link ul{
+	margin: 0 25px;
+	text-align: center;
+	overflow: hidden;
+}
+.social-link li{
+     float: left;
+     padding: 5px;
+     margin-left: 0px;
+} 
+/*.social-link li a{
+	background: gray;
+	color:white;
+	display: block;
+	padding: 10px;
+	border-radius:50%;
+}  */
+.social-link ul li a{
+	color:white;
+}
+.social-link ul li a i::before{
+	width:20px;
+	height: 20px;
+	border-radius:50%;
+	background: #bdd1df;
+	font-size:20px;
+	padding: 10px;
+	display:inline-block;
+	transition:.5s;
+}
+.social-link ul li a:hover i::before{
+	background:#393939;
+	transform:rotate(360deg);
+}
+
+
+
+
+/* ******************************************** */
+/*                   Skill Section              */
+/* ******************************************** */
+
+
+
+.skill-section{
+	background: white;
+
+}
+.skill-head h2,p{
+	color:#3c4761;
+}
+.skill-main img{
+	width:100%;
+	height: 200px;
+	color:#3c4761;
+	padding: 20px;
+}
+.skill-main h3{
+	color:#3c4761;
+}
+.skill{
+	width:25%;
+	float:left;
+}
+
+
+
+/* ******************************************** */
+/*                   Portfolio Section          */
+/* ******************************************** */
+.portfolio-section{
+	background: #ffdd99;
+}
+.portfolio-head h2{
+	margin-bottom:40px;
+}
+.portfolio-head h2,p{
+	color:#393939;
+}
+
+.portfolio-link{
+
+}
+.portfolio-link ul li{
+	display:inline-block;
+	list-style: none;
+	background: #ebc985;
+	border-radius:5px;
+	margin:20px 5px 0 5px;
+	padding: 0 5px;
+}
+.portfolio-link ul li a{
+	text-decoration: none;
+	margin-left: 5px;
+	padding: 5px 10px;
+	color:#393939;
+	
+	display: block;
+}
+.portfolio-link ul li:hover{
+	background: white;
+}
+.box{
+	width:45%;
+	float:left;
+	padding-top:30px;
+}
+.time,.blog{
+	margin-left:85px;
+}
+.box h3{
+	padding: 14px;
+}
+.load-link{
+	width:15%;
+	display: block;
+	text-align: center;
+	padding: 20px;
+	margin: 0 auto;
+	text-decoration: none;
+	background: #17c2a4;
+	color:white;
+	font-size: 17px;
+	border-bottom: 3px solid #14a58c;
+}
+
+
+
+
+/* ******************************************** */
+/*                   People Section             */
+/* ******************************************** */
+
+
+.people-section{
+	background: #d74680;
+}
+.people-head{
+	color:white;
+}
+.people-head p{
+	color:white;
+}
+.people-main{
+	color:white;
+}
+.client-pic{
+	border: 0px solid red;
+	float:left;
+
+}
+.client-pic img{
+	width:80px;
+	height: 80px;
+	border-radius:50%;
+}
+.client-msg{
+	
+	border: 0px solid black;
+	text-align: left;
+	
+	margin-left:140px;
+}
+.client-msg q{
+	font-style:italic;
+	line-height: 25px;
+}
+.client-msg h3{
+	padding-left: 0;
+	padding-bottom: 0;
+	color:white;
+}
+.comment1, .comment2, .comment3, .comment4{
+	padding:30px;
+	padding-top: 50px;
+}
+.role{
+	color:#fcd597;
+}
+
+
+/* ******************************************** */
+/*              Get In Touch Section            */
+/* ******************************************** */
+
+.get-touch{
+	background: #3c5499;
+}
+.input-mod{
+	width:50%;
+	float:left;
+}
+.get-touch-head p,h2{
+	color:#fff;
+}
+.get-touch-head h2::after{
+	content: "";
+	background: #273a71;
+	width: 10%
+	height:85px;
+	margin: auto;
+	display:block;
+}
+.get-touch-main .row{
+	border:0px solid red;
+}
+.get-touch input[type="text"],
+.get-touch input[type="email"],
+.get-touch textarea{
+	background: #273a71;
+	width:100%;
+	border:4px solid #3c5499;
+	padding:5px;
+	font-size: 18px;
+}
+.get-touch input[type="text"]::placeholder,
+.get-touch input[type="email"]::placeholder,
+.get-touch textarea::placeholder{
+	color:#fff;
+	opacity: .4;
+}
+.get-touch-main form{
+	width: 70%;
+	margin: 20px auto;
+}
+input[type="submit"]{
+	background: #30bae7;
+	margin-top:50px;
+	padding: 10px;
+	color:white;
+	border: none;
+	border-radius: 5px;
+	border-bottom: 3px solid #299ec5;
+	cursor: pointer;
+}
+
+
+/* ******************************************** */
+/*              Footer  Section                 */
+/* ******************************************** */
+
+.footer-section{
+	background: #273e80;
+	padding: 50px 0;
+}
+.footer-section ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+.footer-section ul li a{
+	color: #fff;
+	font-size: 18px;
+	font-weight:700;
+	border:0px solid red;
+	padding:20px;
+	text-decoration: none;
+	margin:0 10px;
+	display: block;
+}
+.footer-section ul li a:hover{
+	color: #30bae7;
+}
+
